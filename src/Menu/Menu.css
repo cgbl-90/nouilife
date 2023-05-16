@@ -1,0 +1,28 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu-items li {
+    margin-right: 10px;
+    cursor: pointer;
+}
