@@ -24,5 +24,12 @@
 
 .menu-items li {
     margin-right: 10px;
-    cursor: pointer;
+    color: #036295;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-items li:hover {
+    color: #072813;
 }

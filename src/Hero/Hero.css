@@ -1,0 +1,52 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('hero.jpg');
+    /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: movingBackground 20s linear infinite;
+}
+
+@keyframes movingBackground {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.hero-content {
+    z-index: 1;
+    padding-top: 200px;
+    margin: 0 200px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    width: 800px;
+    color: #036295;
+    text-align: left;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    text-align: left;
+    width: 600px;
+    font-weight: 500;
+    color: rgb(15, 72, 14);
+}
